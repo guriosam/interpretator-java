@@ -11,15 +11,7 @@ public class Interpretator {
 		ArrayList<String> memory = new ArrayList<String>();
 
 		try {
-			// FileReader arq = new FileReader("");
-			// BufferedReader lerArq = new BufferedReader(arq);
-			// String linha = lerArq.readLine();
-
-			// while (linha != null) {
-			// linha = lerArq.readLine();
-			// memory.add(linha);
-			// }
-
+		
 			memory.add("20 3 4 5 *");
 			memory.add("2 3 4 5 +");
 			memory.add("2 3 4 5 -");
@@ -30,7 +22,6 @@ public class Interpretator {
 
 			for (String s : memory) {
 
-				// s = s.replaceAll(" ", "");
 				chars = separate(s);
 
 				String op = chars.get(chars.size() - 1);
